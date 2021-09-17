@@ -45,6 +45,9 @@ namespace MyService
                     writer.WriteLine(string.Format("WIndows services is called on " + DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")));
                     writer.Close();
                 }
+
+                var util = new Util();
+                Util.DoJob();
                 Thread.Sleep(ScheduleTime*60*1000);
             }
         }
