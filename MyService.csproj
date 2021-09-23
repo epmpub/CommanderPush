@@ -99,6 +99,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Deploy.bat" />
+    <None Include="README.MD" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ProjectInstaller.resx">
