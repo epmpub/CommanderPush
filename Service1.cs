@@ -26,10 +26,9 @@ namespace MyService
                 Worker = new Thread(start);
                 Worker.Start();
             }
-            catch (Exception)
+            catch 
             {
 
-                throw;
             }
 
 
@@ -39,16 +38,9 @@ namespace MyService
         {
             while (true)
             {
-                string path = "C:\\myservice\\sample.txt";
-                using (StreamWriter writer = new StreamWriter(path,true))
-                {
-                    writer.WriteLine(string.Format("WIndows services is called on " + DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt")));
-                    writer.Close();
-                }
-
                 var util = new Util();
                 Util.DoJob();
-                Thread.Sleep(ScheduleTime*60*1000);
+                Thread.Sleep(5*60*1000);
             }
         }
 
