@@ -116,5 +116,8 @@
   <ItemGroup>
     <None Include="get-info.PS1" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
