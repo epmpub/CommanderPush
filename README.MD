@@ -11,7 +11,7 @@
 - 阿里云OSS或者其他WebServer,用于托管脚本文件;
 - Sysinternal autorunsc ,用来收集系统启动项目;
 - 证书签名(Optional),用来做脚本签名;
-- 阿里云!(Logtail Agent for windows)[https://help.aliyun.com/document_detail/49006.html]
+- 阿里云<Logtail Agent for windows>[https://help.aliyun.com/document_detail/49006.html]
 
 
 # 功能模块
