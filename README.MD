@@ -4,7 +4,7 @@
 2. 企业防病毒软件对系统的启动项目没有关注,存在漏洞;
 3. 云计算的环境下,自建ELK平台,没有太大价值,存在成本问题;
 4. 病毒或者恶意软件的入侵,必然通过启动项目,对整个系统进行精细管理非常有必要;
-5. 其他的需求
+5. 其他的需求,成本低(包括网络带宽和阿里云SLS租用),部署灵活;
 
 # 依赖项目
 - 阿里云SLS , 用于数据存储与分析与展示,SLS类似ELK stack,为托管服务,由于成本原因,不建议使用ELK平台;
@@ -52,8 +52,8 @@
 ![autoruns](https://github.com/epmpub/MyService/blob/ed533bfcf58baf55e8e6a3d94c07f59413b332e4/images/myService2.png)
 ![CMDB](https://github.com/epmpub/MyService/blob/ed533bfcf58baf55e8e6a3d94c07f59413b332e4/images/myService3.png)
 
-#与我联系
-如果对次项目感兴趣,可以联系我(+86 181 2220 8655 Wechat)
+# 与我联系
+如果对次项目感兴趣,可以随时联系我(+86 181 2220 8655 Wechat)
 - 测试环境
 - Face to Face meeting ,腾讯视频,功能介绍.需要提前预约;
-- Demo
+- 具体的项目成本和TCO
