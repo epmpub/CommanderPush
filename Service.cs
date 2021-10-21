@@ -4,7 +4,7 @@ using System.ServiceProcess;
 using System.Configuration;
 using System.Threading;
 using System.IO;
-namespace TinyExecutor
+namespace Commander
 {
     [RunInstaller(true)]
     public partial class Service : ServiceBase

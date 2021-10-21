@@ -1,5 +1,5 @@
 ﻿
-namespace TinyExecutor
+namespace Commander
 {
     partial class ProjectInstaller
     {
