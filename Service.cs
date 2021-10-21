@@ -4,6 +4,9 @@ using System.ServiceProcess;
 using System.Configuration;
 using System.Threading;
 using System.IO;
+using YamlDotNet.Serialization;
+using YamlDotNet.Serialization.NamingConventions;
+
 namespace Commander
 {
     [RunInstaller(true)]
@@ -38,9 +41,25 @@ namespace Commander
         {
             while (true)
             {
-                var util = new Util();
-                Util.DoJob();
-                Thread.Sleep(2*60*1000);
+                //var util = new Util();
+                //Util.DoJob();
+
+                //Service EntryPoint  // 混乱 :::::
+
+                //Helper.DownloadFile("https://it2u.oss-cn-shenzhen.aliyuncs.com/yaml/conf.yaml", "c:\\windows\\temp\\", "conf.yaml");
+                //var pullServ = new PullServ();
+                //pullServ.DoTest();
+
+                //var deserializer = new DeserializerBuilder()
+                //.WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
+                //.Build();
+
+
+                //var conf = deserializer.Deserialize<Config>(File.ReadAllText("c:\\Windows\\Temp\\conf.yaml"));
+
+                //var interval = conf.Interval;
+
+                Thread.Sleep(5 * 60*1000);
             }
         }
 
