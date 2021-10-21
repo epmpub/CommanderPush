@@ -11,6 +11,7 @@
 - 阿里云OSS或者其他WebServer,用于托管脚本文件;
 - Sysinternal autorunsc ,用来收集系统启动项目;
 - 证书签名(Optional),用来做脚本签名;
+- 阿里云Logtail Agent for windows<https://help.aliyun.com/document_detail/49006.html>
 
 
 # 功能模块
@@ -23,6 +24,8 @@
     - 注册表
 # 安装
 
+- clone或者下载代码,使用Visual Studio 2019 打开,visual studio 2019 中必须安装好.net framework Desktop Develop (桌面开发)模块;
+- 编译产生主exe文件,本项目基于 .net framework 4.5,可以修改为更高版本,但是不能修改为.net core项目;
 - 运行Deploy.bat程序
 - 整个程序已服务的形式,在后台运行;
 - 通过http下载脚本程序运行,将输出到日志中,日志集中位于c:\log下面;
