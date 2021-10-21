@@ -1,5 +1,5 @@
 ﻿
-namespace MyService
+namespace TinyExecutor
 {
     partial class ProjectInstaller
     {

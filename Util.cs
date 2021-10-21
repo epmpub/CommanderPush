@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Net;
 
-namespace MyService
+namespace TinyExecutor
 {
     internal class Util
     {

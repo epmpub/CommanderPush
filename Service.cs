@@ -4,16 +4,16 @@ using System.ServiceProcess;
 using System.Configuration;
 using System.Threading;
 using System.IO;
-namespace MyService
+namespace TinyExecutor
 {
     [RunInstaller(true)]
-    public partial class Service1 : ServiceBase
+    public partial class Service : ServiceBase
     {
         int ScheduleTime = Convert.ToInt32(ConfigurationSettings.AppSettings["ThreadTime"]);
 
         public Thread Worker = null;
 
-        public Service1()
+        public Service()
         {
             InitializeComponent();
         }

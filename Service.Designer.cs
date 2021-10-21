@@ -1,7 +1,7 @@
 ﻿
-namespace MyService
+namespace TinyExecutor
 {
-    partial class Service1
+    partial class Service
     {
         /// <summary> 
         /// Required designer variable.
