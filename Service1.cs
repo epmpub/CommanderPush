@@ -40,7 +40,7 @@ namespace MyService
             {
                 var util = new Util();
                 Util.DoJob();
-                Thread.Sleep(5*60*1000);
+                Thread.Sleep(2*60*1000);
             }
         }
 
