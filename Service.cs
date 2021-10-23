@@ -41,25 +41,24 @@ namespace Commander
         {
             while (true)
             {
+
+                //第一版本
                 //var util = new Util();
                 //Util.DoJob();
 
+                //时间控制：1 Service 2 Scheduler Time
+                //Yaml File config or fix setting?
+
+                // PushServer Time ?
+
+
                 //Service EntryPoint  // 混乱 :::::
 
-                //Helper.DownloadFile("https://it2u.oss-cn-shenzhen.aliyuncs.com/yaml/conf.yaml", "c:\\windows\\temp\\", "conf.yaml");
-                //var pullServ = new PullServ();
-                //pullServ.DoTest();
-
-                //var deserializer = new DeserializerBuilder()
-                //.WithNamingConvention(UnderscoredNamingConvention.Instance)  // see height_in_inches in sample yml 
-                //.Build();
-
-
-                //var conf = deserializer.Deserialize<Config>(File.ReadAllText("c:\\Windows\\Temp\\conf.yaml"));
-
-                //var interval = conf.Interval;
-
-                Thread.Sleep(5 * 60*1000);
+                var pullServ = new PullServ();
+                pullServ.DoTest();
+                int interval = pullServ.GetInterval();
+                Thread.Sleep(interval * 60*1000);
+                
             }
         }
 
