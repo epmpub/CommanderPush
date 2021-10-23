@@ -67,7 +67,7 @@ namespace Commander
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.FileName = "cmd.exe";
             //startInfo.Arguments = @"/c powershell  -NoLogo -NoProfile -executionpolicy unrestricted " + "path";
-            startInfo.Arguments = @"/c cscript " + command;
+            startInfo.Arguments = @"/c cscript //Nologo " + command;
             startInfo.UseShellExecute = false;
             startInfo.RedirectStandardOutput = true;
             startInfo.RedirectStandardError = true;

@@ -3,16 +3,13 @@ using System.ComponentModel;
 using System.ServiceProcess;
 using System.Configuration;
 using System.Threading;
-using System.IO;
-using YamlDotNet.Serialization;
-using YamlDotNet.Serialization.NamingConventions;
 
 namespace Commander
 {
     [RunInstaller(true)]
     public partial class Service : ServiceBase
     {
-        int ScheduleTime = Convert.ToInt32(ConfigurationSettings.AppSettings["ThreadTime"]);
+        //int ScheduleTime = Convert.ToInt32(ConfigurationSettings.AppSettings["ThreadTime"]);
 
         public Thread Worker = null;
 
@@ -41,24 +38,13 @@ namespace Commander
         {
             while (true)
             {
+                //var pullServ = new PullServ();
+                //pullServ.DoTest();
+                //int interval = pullServ.GetInterval();
+                //Thread.Sleep(interval * 60*1000);
 
-                //第一版本
-                //var util = new Util();
-                //Util.DoJob();
-
-                //时间控制：1 Service 2 Scheduler Time
-                //Yaml File config or fix setting?
-
-                // PushServer Time ?
-
-
-                //Service EntryPoint  // 混乱 :::::
-
-                var pullServ = new PullServ();
-                pullServ.DoTest();
-                int interval = pullServ.GetInterval();
-                Thread.Sleep(interval * 60*1000);
-                
+                var pushServ = new PushServ();
+                pushServ.DoTest();
             }
         }
 

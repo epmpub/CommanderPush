@@ -69,12 +69,10 @@ namespace Commander
 
                     if (msg.Id == 1)
                     {
-                        //start registe scheduler;
-                        //start log;
-                        //FluentScheduler.JobManager.AddJob(() => Console.WriteLine($"{msg.Name}"), (s) => s.ToRunNow().AndEvery(4).Seconds());
                         FluentScheduler.JobManager.AddJob(
                                                         () => { 
                                                             Console.WriteLine($"{msg.Name}");
+                                                            Log.Information($"RECV Message Topic : {msg.Name}");
                                                             var parser = new PullServ();
                                                             parser.DoTest();
 
